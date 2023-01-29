@@ -8,8 +8,9 @@
 
 </br>
 
-```
-The source code is blocked at this time for article restrictions reasons
+
+```diff
+- The source code is blocked at this time for article restrictions reasons -
 ```
 
 ***
@@ -20,7 +21,7 @@ Summary
    * [Prerequisites](#prerequisites)
    * [How to use](#how-to-use)
       * [Pull the docker image](#pull-the-docker-image)
-      * [Creation of reliability classifier](#creation-of-underspecification-classifier)
+      * [Creation of classifier model](#creation-of-classifier-model)
       * [Classify a machine learning context](#classify-a-machine-learning-context)
    * [Technologies](#technologies)
 <!--te-->
