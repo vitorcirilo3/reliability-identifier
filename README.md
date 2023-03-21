@@ -10,7 +10,7 @@
 
 
 ```diff
-- The source code is blocked at this time for article restrictions reasons -
+- The source code will be released once the article referring to the work is accepted -
 ```
 
 ***
