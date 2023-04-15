@@ -1,7 +1,7 @@
 <h1 align="center">Unreliability identifier</h1>
 
 <p align="center">
-<img src="https://github.com/vitorcirilo3/underspecification-identifier/blob/main/img/logo.gif" alt="" data-canonical-src="[https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png](https://github.com/vitorcirilo3/underspecification-identifier/blob/main/logo.gif)" width="771" height="300" />
+<img src="https://github.com/vitorcirilo3/underspecification-identifier/blob/main/logo/logo.gif" alt="" data-canonical-src="[https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png](https://github.com/vitorcirilo3/underspecification-identifier/blob/main/logo/logo.gif)" width="771" height="300" />
 </p>
 
 <p align="center">🚀 This project aims to identify if a context is unreliable using a methodology based on Item Response Theory.</p>
@@ -33,7 +33,7 @@ The unreliability identifier is data-centric methodology based on Item Response 
 The big picture of our methodology can be seen bellow.
 
 <p align="center">
-<img src="https://github.com/vitorcirilo3/underspecification-identifier/blob/main/img/overview.png" alt="" data-canonical-src="[https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png](https://github.com/vitorcirilo3/underspecification-identifier/blob/main/img/overview.png)" width="772" height="340" />
+<img src="https://github.com/vitorcirilo3/underspecification-identifier/blob/main/logo/overview.png" alt="" data-canonical-src="[https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png](https://github.com/vitorcirilo3/underspecification-identifier/blob/main/logo/overview.png)" width="772" height="340" />
 </p>
 
 
