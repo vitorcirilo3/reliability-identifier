@@ -40,14 +40,40 @@ The big picture of our methodology can be seen bellow.
 # Prerequisites
 - Docker 20.10.14+
 
-# How to use
+# Quick start
 
 The step-by-step to execute the Unreliability identifier will be describe bellow:
 
 ## Pull the docker image
 ```
-docker pull vitorcirilo3/underspecification-identifier:1.0
+docker pull vitorcirilo3/unrealibility-identifier:1.0
 ```
+
+## Create a folder called "results"
+
+If you are using ubuntu/debian then just use the command
+
+```
+mkdir results
+```
+
+## Run docker container
+
+```
+docker run -it -v /$(PWD)/results:/root/reliability-identifier/results --name reliability-identifier vitorcirilo3/reliability-identifier:1.0
+```
+
+## Go to root folder
+
+```
+cd root
+```
+
+## Let's clone this repository to there!
+```
+git clone https://github.com/vitorcirilo3/reliability-identifier.git
+```
+
 
 ## Creation of classifier model
 
