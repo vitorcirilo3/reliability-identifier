@@ -63,38 +63,35 @@ mkdir results
 docker run -it -v /$(PWD)/results:/root/reliability-identifier/results --name reliability-identifier vitorcirilo3/reliability-identifier:1.0
 ```
 
-## Go to root folder
+## Go to 'reliability-identifier' folder and apply the following commands
 
 ```
-cd root
+cd root/reliability-identifier
 ```
 
-## Let's clone this repository to there!
 ```
-git clone https://github.com/vitorcirilo3/reliability-identifier.git
-```
-
-
-## Creation of classifier model
-
-This command will create the classifier from the our methodology. By default we are using 128 data partitions, however, it is very easy to change that. You need only the input-list-datasets file. This makes it very easy to perform new tests and update the model if necessary.
-
-```
-docker run -d -it --rm $(pwd):/src vitorcirilo3/underspecification-identifier:1.0 /src/main.sh
+git reset --hard
 ```
 
-This command will execute our methodology with 128 data partitions from 21 datasets. When the execution be done we will have a model capable to identify unreliability. This model will be in the pkl format and if would like to verify if a new context if unreliability we only need to use the following command 
-
-## Classify a machine learning context
 ```
-docker run -d -it --rm $(pwd):/src vitorcirilo3/underspecification-identifier:1.0 /src/classify.sh dataset_input_name
+git pull
 ```
 
-When the execution done it will show at screen "The machine learning context is normal" or "Attention! The machine learning context is unreliable!"
+## all set up! Let's start to run the methodology. First step, create the dataset partitions. Execute the python code:
+
+```
+python datasets_partition_creation.py
+```
+
+## after that, execute the main code to apply the IRT and create the model to identify unreliable contexts
+
+```
+main.py
+```
+
+PS: this script takes about 6 hours on a computer i7 with 16 GB of ram
+
+## Results
+When this script done, all the results will be save at 'results' folder that was mapped outside of docker
 
 
-# Technologies
- - Docker 20.10.14
- - Python 3.8.8
- - R 3.5.0
- - Cookiecutter 1.0
