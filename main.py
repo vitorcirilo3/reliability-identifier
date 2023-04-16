@@ -396,7 +396,7 @@ df_train['dataset_type'] = pd.to_numeric(df_train['dataset_type'])
 # for seed_i in seed_values:
 #     seed_value = seed_i
 
-seed_value = 50
+seed_value = 3
 
 models_and_results = pd.DataFrame(columns=['model','model_name','acc_mean','f1_mean'], index=range(8))
 models_count = 0
