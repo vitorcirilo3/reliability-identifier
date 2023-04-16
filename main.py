@@ -12,7 +12,6 @@ import dill
 from sklearn.metrics import f1_score
 from imblearn.over_sampling import SMOTE
 import lightgbm as lgb
-import catboost as cb
 from sklearn.model_selection import StratifiedKFold
 from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import GaussianNB,BernoulliNB
@@ -399,7 +398,7 @@ df_train['dataset_type'] = pd.to_numeric(df_train['dataset_type'])
 
 seed_value = 50
 
-models_and_results = pd.DataFrame(columns=['model','model_name','acc_mean','f1_mean'], index=range(9))
+models_and_results = pd.DataFrame(columns=['model','model_name','acc_mean','f1_mean'], index=range(8))
 models_count = 0
 
 
@@ -435,10 +434,10 @@ models_and_results['model'][models_count] = model
 models_and_results['model_name'][models_count] = 'AdaBoostClassifier'
 models_count +=1
 
-model = cb.CatBoostClassifier(random_state=seed_value)
-models_and_results['model'][models_count] = model
-models_and_results['model_name'][models_count] = 'CatBoostClassifier'
-models_count +=1
+# model = cb.CatBoostClassifier(random_state=seed_value)
+# models_and_results['model'][models_count] = model
+# models_and_results['model_name'][models_count] = 'CatBoostClassifier'
+# models_count +=1
 
 model = lgb.LGBMClassifier(random_state=seed_value)
 models_and_results['model'][models_count] = model
@@ -452,7 +451,7 @@ models_count +=1
 
 
 dataset = df_train.copy()
-skf = StratifiedKFold(n_splits=4, shuffle=True, random_state=seed_value)
+skf = StratifiedKFold(n_splits=10, shuffle=True, random_state=seed_value)
 
 x = dataset.copy()
 x.drop(['dataset_type'],axis=1)
