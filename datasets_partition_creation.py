@@ -6,6 +6,10 @@ import os
 from scipy import stats
 
 
+# create folders
+
+os.mkdir("dataset_partitions")
+
 # path of CSVs to read
 inputPath = "datasets"
 
