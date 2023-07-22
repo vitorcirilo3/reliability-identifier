@@ -10,7 +10,7 @@
 
 
 ```diff
-- Source code of the paper "The quest for reliability of machine learning models" -
+- Source code of the paper "The quest for the reliability of machine learning models in binary classification on tabular data" -
 ```
 
 ***
@@ -46,7 +46,7 @@ The big picture of our methodology can be seen bellow.
 
 # Quick start
 
-Follow the steps below to replicate the results that were presented in the paper "The quest for reliability of machine learning models"
+Follow the steps below to replicate the results that were presented in the paper "The quest for the reliability of machine learning models in binary classification on tabular data"
 
 ### Pull the docker image
 ```
